@@ -44,3 +44,15 @@ a:hover{
 	background:#FFF;
 	padding:20px;
 }
+.input-sm {
+    width: 200px; 
+}
+.label-spacing {
+	width: 100px; /* Defina a largura desejada para os rótulos */
+	text-align: right; /* Alinha o texto do rótulo à direita */
+	margin-right: 10px; /* Define a margem direita para criar um espaço entre o rótulo e o campo de input */
+}
+.button-spacing {
+	width: 280px; /* Defina a largura desejada para os rótulos */
+	text-align: right; /* Alinha o texto do rótulo à direita */
+}

@@ -1,13 +1,15 @@
-var mysql = require('mysql')
-var connMySQL = () => {
-    console.log('conectando db')
+var mysql = require('mysql');
+var connMySQL = function(){
+    console.log("Conexão com DB criada!");
     return mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'portalnews'}
-    )
-}   
-module.exports = () => {
-    return connMySQL; 
+        host : 'localhost',
+        user : 'root',
+        password : 'root',
+        database : 'portalnews'
+    }); 
 }
+module.exports = function(){
+    console.log("Módulo de conexão com DB carregado!");
+    return connMySQL;
+}
+        
